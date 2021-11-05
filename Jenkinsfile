@@ -10,17 +10,24 @@ pipeline {
                 }
             }
         }
-        stage('Install') {
+        #stage('Install') {
+        #     steps{
+        #        script{
+        #            sh "npm install"
+        #        }
+        #    }
+        #}
+        #stage('Build') {
+        #     steps{
+        #        script{
+        #            sh "ansible-playbook ansible/build.yml -i ansible/inventory/host.yml"
+        #        }
+        #    }
+        #}
+        stage('Docker') {
              steps{
                 script{
-                    sh "npm install"
-                }
-            }
-        }
-        stage('Build') {
-             steps{
-                script{
-                    sh "ansible-playbook ansible/build.yml -i ansible/inventory/host.yml"
+                    sh "ansible-playbook ansible/docker.yml -i ansible/inventory/host.yml"
                 }
             }
         }
