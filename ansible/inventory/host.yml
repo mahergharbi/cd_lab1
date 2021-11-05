@@ -5,6 +5,4 @@ localhost
 
 [Server:vars]
 ansible_python_interpreter= /usr/bin/python3
-ansi_user= amineg
 ansible_user=amineg
-ansible_become_pass=root
