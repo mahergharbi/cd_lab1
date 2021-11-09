@@ -1,5 +1,10 @@
 ---
 # tasks file for docker-registry
+- name: Log into DockerHub
+  docker_login:
+    username: aminegongi
+    password: 271998271998
+    email: amine.gongi@esprit.tn
 - name: Tag and push to docker hub
   docker_image:
     name: aminegongi/ag_lab
