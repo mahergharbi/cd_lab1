@@ -2,11 +2,7 @@
 # tasks file for docker
 - name: create image docker
   docker_image:
-<<<<<<< HEAD
     name: aminegongi/ag_lab
-=======
-    name: labag
->>>>>>> 50c337738a16acc82b7d80327447c5639f02a92a
     build:
      path: /var/lib/jenkins/workspace/lab1
      pull: no
