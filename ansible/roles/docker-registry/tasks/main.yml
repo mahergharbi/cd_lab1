@@ -5,8 +5,8 @@
     username: aminegongi
     password: 271998271998
     email: amine.gongi@esprit.tn
-- name: Tag and push to docker hub
+- name: Push to docker hub
   docker_image:
-    name: aminegongi/cd_lab
+    name: "aminegongi/cd_lab"
     repository: aminegongi/cd_lab
     push: yes
