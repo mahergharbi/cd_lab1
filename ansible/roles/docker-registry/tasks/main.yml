@@ -7,6 +7,6 @@
     email: amine.gongi@esprit.tn
 - name: Tag and push to docker hub
   docker_image:
-    name: aminegongi/ag_lab
+    name: aminegongi/cd_lab
     repository: aminegongi/cd_lab
     push: yes
