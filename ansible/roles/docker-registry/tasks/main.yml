@@ -10,4 +10,5 @@
     name: aminegongi/cd_lab
     repository: aminegongi/cd_lab
     tag: latest
+    source: local
     push: yes
